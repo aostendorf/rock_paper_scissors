@@ -1,4 +1,66 @@
+var elements = ["Rock", "Paper", "Scissors"];
 
+function choice() {
+    var x = document.getElementById("dropdown").value;
+    document.getElementById("option").innerHTML = "You selected: "
+    + x;
+}
+
+var computerPick = elements[Math.floor(Math.random() * elements.length)];
+console.log(computerPick)
+
+
+var compare = function (userPick, computerPick) {  
+
+    if (userPick === computerPick) {
+        return("The result is a tie!");
+    }
+
+    if (userPick === "rock") {
+        if (computerPick=== "scissors");
+    } else {
+        return ("rock wins");
+    }
+
+    if (userPick === "paper") {
+        if (computerPick === "rock");
+    } else {
+        return ("paper wins");
+    }
+
+    if (userPick === "paper") {
+        if (computerPick === "scissors");
+    } else {
+        return ("scissors wins");
+    }
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var paper = function(userPick, computerPick)
+if (userInput === "Paper") {
+   if (computerPick === "Rock") 
+    console.log "Paper covers rock. You win!";
+}
+  else {
+   if (computerPick === "Scissors") 
+    console.log "Scissors cut paper. You lost!";
+    
+}   
+     
 
 
 
